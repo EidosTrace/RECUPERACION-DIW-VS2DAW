@@ -1,0 +1,149 @@
+/* Styles for the Market page */
+
+.main {
+    background-color: #0c0c0c;
+    color: #fff;
+    min-height: 80vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.market__header {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #08bec7;
+    text-align: center;
+}
+
+.market__bets-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+    background-color: rgb(44, 95, 117);
+    box-shadow: 0 0 10px rgba(0, 217, 255, 0.7);
+}
+
+.card {
+    background-color: rgb(44, 95, 117);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 217, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.card:hover {
+    background-color: rgb(49, 134, 170);
+}
+
+.card__title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.card__teams {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.card__team-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.card__details {
+    font-size: 0.9rem;
+    color: #c7d1d9;
+    margin-bottom: 0.5rem;
+}
+
+.card__status {
+    font-weight: bold;
+    color: #08bec7;
+}
+
+.card__join-button {
+    display: block;
+    margin: 0.5rem auto 0 auto;
+    background-color: #08bec7;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card__join-button:hover {
+    background-color: #06a5aa;
+}
+
+.market__add-bet {
+    margin-top: 2rem;
+    background-color: rgb(44, 95, 117);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 217, 255, 0.7);
+    max-width: 400px;
+    width: 100%;
+}
+
+.add-bet__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-bet__label {
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.add-bet__input,
+.add-bet__select {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+.add-bet__submit {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #08bec7;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-bet__submit:hover {
+    background-color: #06a5aa;
+}
+.tarjeta{
+    background-color: #1a6b62;
+    border-radius: 10px;
+    border: 3px;
+    box-shadow: 0 0 15px rgba(255, 77, 0, 0.7);
+    padding: 8%;
+}
+@media (max-width: 768px) {
+    .market__bets-container {
+        grid-template-columns: 1fr;
+    }
+}

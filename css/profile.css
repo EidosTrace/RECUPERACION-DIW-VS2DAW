@@ -1,0 +1,87 @@
+/* Styles for the Profile page */
+
+.main {
+    background-color: #0c0c0c;
+    color: #fff;
+    min-height: 80vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile__header {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #08bec7;
+    text-align: center;
+}
+
+.profile__container {
+    background-color: rgb(44, 95, 117);
+    border-radius: 10px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 217, 255, 0.7);
+}
+
+.profile__section {
+    margin-bottom: 1.5rem;
+}
+
+.profile__section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #08bec7;
+    padding-bottom: 0.5rem;
+}
+
+.profile__info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.profile__info-item {
+    flex: 1 1 45%;
+    font-size: 1rem;
+}
+
+.profile__info-label {
+    font-weight: bold;
+    color: #c7d1d9;
+}
+
+.profile__info-value {
+    margin-left: 0.5rem;
+}
+
+.profile__bets-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile__bets-list li {
+    background-color: rgb(25, 143, 135);
+    margin-bottom: 0.5rem;
+    padding: 0.75rem;
+    border-radius: 5px;
+    color: #c7d1d9;
+}
+
+.profile__notifications {
+    background-color: rgb(25, 143, 135);
+    padding: 1rem;
+    border-radius: 10px;
+    color: #c7d1d9;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+    .profile__info-item {
+        flex: 1 1 100%;
+    }
+}

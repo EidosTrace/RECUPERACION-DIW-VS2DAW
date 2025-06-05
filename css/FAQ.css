@@ -1,0 +1,10 @@
+.container_FAQ{
+    display: grid;
+    margin: 5%;
+}
+.container_FAQ h1{
+    color: orangered;
+}
+.container_FAQ h2{
+    color: teal;
+}
