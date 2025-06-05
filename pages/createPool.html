@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es" itemscope itemtype="http://schema.org/WebPage">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Crear Pool de Apuestas - Plataforma de Apuestas Deportivas</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/auth.css" />
+</head>
+<body>
+    <header class="header" role="banner">
+        <a href="../test.html" class="header__logo-link" title="Homepage" itemprop="url" aria-label="Homepage link">
+            <img src="../img/CamiloTFLogoaasasa.webp" alt="Logo" itemprop="image" />
+        </a>
+        <nav class="header__nav" role="navigation" aria-label="Main navigation">
+            <ul class="header__nav-list">
+                <li><a href="/pages/AIAssistant.html" class="header__link" title="Asistente">Asistente</a></li>
+                <li><a href="/pages/register.html" class="header__link" title="Registrarse">Registrarse</a></li>
+                <li><a href="/pages/login.html" class="header__link" title="Iniciar sesión">Iniciar sesión</a></li>
+                <li><a href="/pages/market.html" class="header__link" title="Mercado de Apuestas">Mercado de Apuestas</a></li>
+                <li><a href="/pages/profile.html" class="header__link" title="Perfil de Usuario">Perfil de Usuario</a></li>
+                <li><a href="/pages/ranking.html" class="header__link" title="Ranking y Desafíos">Ranking y Desafíos</a></li>
+            </ul>
+        </nav>
+    </header>
+<main class="main" role="main" itemprop="mainContentOfPage">
+    <h1>Crear Pool de Apuestas</h1>
+    <section class="create-pool" aria-label="Formulario para crear un pool de apuestas">
+        <form id="createPoolForm" class="create-pool__form" action="#" method="post" novalidate>
+            <label for="poolName" class="create-pool__label">Nombre del Pool *</label>
+            <input type="text" id="poolName" name="poolName" class="create-pool__input" required />
+            
+            <label for="betAmount" class="create-pool__label">Dinero de la apuesta (€) *</label>
+            <input type="number" id="betAmount" name="betAmount" class="create-pool__input" min="1" step="0.01" required />
+            
+            <label for="betType" class="create-pool__label">Tipo de apuesta *</label>
+            <select id="betType" name="betType" class="create-pool__select" required>
+                <option value="">Seleccione un tipo</option>
+                <option value="ganador">Ganador</option>
+                <option value="puntos">Puntos</option>
+                <option value="resultado">Resultado</option>
+            </select>
+            
+            <label for="team1" class="create-pool__label">Equipo 1 *</label>
+            <input type="text" id="team1" name="team1" class="create-pool__input" required />
+            
+            <label for="team2" class="create-pool__label">Equipo 2 *</label>
+            <input type="text" id="team2" name="team2" class="create-pool__input" required />
+            
+            <label for="poolPublic" class="create-pool__label">Pool público</label>
+            <input type="checkbox" id="poolPublic" name="poolPublic" class="create-pool__checkbox" />
+            
+            <button type="submit" class="create-pool__submit">Crear Pool</button>
+        </form>
+    </section>
+</main>
+<footer class="footer" role="contentinfo">
+    <a href="/pages/about.html" class="footer__link" title="¿Quiénes somos?" aria-label="¿Quiénes somos?">¿Quiénes somos?</a>
+    <a href="/pages/FAQ.html" class="footer__link" title="Preguntas frecuentes" aria-label="Preguntas frecuentes">Preguntas frecuentes</a>
+    <a href="/pages/contact.html" class="footer__link" title="Contacta con nosotros" aria-label="Contacta con nosotros">Contacta con nosotros</a>
+    <a href="/pages/complaints.html" class="footer__link" title="Reclamaciones" aria-label="Reclamaciones">Reclamaciones</a>
+    <a href="/pages/privacy.html" class="footer__link" title="Política de privacidad" aria-label="Política de privacidad">Política de privacidad</a>
+    <a href="/pages/EULA.html" class="footer__link" title="Acuerdo de Usuario final" aria-label="Acuerdo de Usuario final">Acuerdo de Usuario final</a>
+    <br />
+    <p>&copy; | Carlos Mansilla Cruz | Mikel Sierra | 2025 - VS2DAW</p>
+</footer>
+<script src="../pages/createPool.js"></script>
+</body>
+</html>

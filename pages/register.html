@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es" itemscope itemtype="http://schema.org/WebPage">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registro de Usuario - Plataforma de Apuestas Deportivas</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/auth.css" />
+</head>
+<body>
+    <header class="header" role="banner">
+        <a href="../test.html" class="header__logo-link" title="Homepage" itemprop="url" aria-label="Homepage link">
+            <img src="../img/CamiloTFLogoaasasa.webp" alt="Logo" itemprop="image" />
+        </a>
+        <nav class="header__nav" role="navigation" aria-label="Main navigation">
+            <ul class="header__nav-list">
+                <li><a href="/pages/AIAssistant.html" class="header__link" title="Asistente">Asistente</a></li>
+                <li><a href="/pages/register.html" class="header__link" title="Registrarse">Registrarse</a></li>
+                <li><a href="/pages/login.html" class="header__link" title="Iniciar sesión">Iniciar sesión</a></li>
+                <li><a href="/pages/market.html" class="header__link" title="Mercado de Apuestas">Mercado de Apuestas</a></li>
+                <li><a href="/pages/profile.html" class="header__link" title="Perfil de Usuario">Perfil de Usuario</a></li>
+                <li><a href="/pages/ranking.html" class="header__link" title="Ranking y Desafíos">Ranking y Desafíos</a></li>
+            </ul>
+        </nav>
+    </header>
+<main class="main" role="main" itemprop="mainContentOfPage">
+    
+    <section class="registration" aria-label="Formulario de registro de usuario">
+        <form id="registerForm" class="registration__form" action="#" method="post" novalidate>
+            <h1 class="panel__title">¡Crea tu cuenta y únete a la comunidad!</h1>
+            <label for="username" class="registration__label" title="Nombre de usuario">Nombre de usuario *</label>
+            <input type="text" name="username" id="username" class="registration__input" placeholder="Nombre de usuario" required />
+            
+            <label for="name" class="registration__label" title="Nombre">Nombre *</label>
+            <input type="text" name="name" id="name" class="registration__input" placeholder="Nombre" required />
+            
+            <label for="lastname" class="registration__label" title="Apellidos">Apellidos *</label>
+            <input type="text" name="lastname" id="lastname" class="registration__input" placeholder="Apellidos" required />
+            
+            <label for="email" class="registration__label" title="Correo electrónico">Email *</label>
+            <input type="email" name="email" id="email" class="registration__input" placeholder="Email" required />
+            
+            <label for="phone" class="registration__label" title="Número de teléfono">Teléfono *</label>
+            <input type="tel" name="phone" id="phone" class="registration__input" placeholder="666 66 66 66" required />
+            
+            <label for="NIF" class="registration__label" title="DNI o NIF">DNI/NIF *</label>
+            <input type="text" name="NIF" id="NIF" class="registration__input" placeholder="00000000A" required />
+            
+            <label for="password" class="registration__label" title="Clave">Contraseña *</label>
+            <input type="password" name="password" id="password" class="registration__input" placeholder="Contraseña" required />
+            
+            <label for="passwordConfirm" class="registration__label" title="Repite la clave">Repite la contraseña *</label>
+            <input type="password" name="passwordConfirm" id="passwordConfirm" class="registration__input" placeholder="Contraseña" required />
+            
+            <label for="birthdate" class="registration__label" title="Fecha de nacimiento">Fecha de nacimiento *</label>
+            <input type="date" name="birthdate" id="birthdate" class="registration__input" required />
+            
+            <div class="registration__eula">
+                <input type="checkbox" name="EULA" id="eula" required />
+                <label for="eula" title="Acpto los términos de usuario final y el procesamiento de mis datos de acuerdo con la política de pprivacidad">Acepto los términos de usuario final y el procesamiento de mis datos según <a href="privacy.html" aria-label="Redirección a la política ded privacidad">la política de privacidad</a></label>
+            </div>
+            
+            <button type="submit" class="registration__submit" aria-label="Botón de registrarse">Registrarse</button>
+            <p><a href="login.html" aria-label="¿Ya tienes cuenta? Inicia sesión">¿Ya tienes una cuenta? Inicia sesión.</a></p>
+        </form>
+    </section>
+</main>
+<footer class="footer" role="contentinfo">
+    <a href="/pages/about.html" class="footer__link" title="¿Quiénes somos?" aria-label="¿Quiénes somos?">¿Quiénes somos?</a>
+    <a href="/pages/FAQ.html" class="footer__link" title="Preguntas frecuentes" aria-label="Preguntas frecuentes">Preguntas frecuentes</a>
+    <a href="/pages/contact.html" class="footer__link" title="Contacta con nosotros" aria-label="Contacta con nosotros">Contacta con nosotros</a>
+    <a href="/pages/complaints.html" class="footer__link" title="Reclamaciones" aria-label="Reclamaciones">Reclamaciones</a>
+    <a href="/pages/privacy.html" class="footer__link" title="Política de privacidad" aria-label="Política de privacidad">Política de privacidad</a>
+    <a href="/pages/EULA.html" class="footer__link" title="Acuerdo de Usuario final" aria-label="Acuerdo de Usuario final">Acuerdo de Usuario final</a>
+    <br />
+    <p>&copy; | Carlos Mansilla Cruz | Mikel Sierra | 2025 - VS2DAW</p>
+</footer>
+<script src="../JS/auth.js"></script>
+</body>
+</html>

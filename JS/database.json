@@ -1,0 +1,26 @@
+[
+    {
+        "user": {
+            "username": "",
+            "name": "",
+            "lastname": "",
+            "password": "",
+            "email": "",
+            "phone": "",
+            "address": "",
+            "balance": 0.00,
+            "currency": "EUR",
+            "NIF": "",
+            "bets": [
+                {
+                    "id": 1,
+                    "bet_type": "single",
+                    "bet_amount": 10.00,
+                    "bet_date": "2025-01-01",
+                    "bet_status": "cerrada",
+                    "bet_result": "win"
+                }
+                ]
+            }
+    }
+]
