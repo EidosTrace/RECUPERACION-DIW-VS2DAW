@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es" itemscope itemtype="http://schema.org/WebPage">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/market.css" />
 </head>
+
 <body>
     <header class="header" role="banner">
         <a href="../test.html" class="header__logo-link" title="Homepage" itemprop="url" aria-label="Homepage link">
@@ -14,60 +16,63 @@
         </a>
         <nav class="header__nav" role="navigation" aria-label="Main navigation">
             <ul class="header__nav-list">
-                <li><a href="/pages/AIAssistant.html" class="header__link" title="Asistente">Asistente</a></li>
-                <li><a href="/pages/register.html" class="header__link" title="Registrarse">Registrarse</a></li>
-                <li><a href="/pages/login.html" class="header__link" title="Iniciar sesión">Iniciar sesión</a></li>
-                <li><a href="/pages/market.html" class="header__link" title="Mercado de Apuestas">Mercado de Apuestas</a></li>
-                <li><a href="/pages/profile.html" class="header__link" title="Perfil de Usuario">Perfil de Usuario</a></li>
-                <li><a href="/pages/ranking.html" class="header__link" title="Ranking y Desafíos">Ranking y Desafíos</a></li>
+                <li><a href="AIAssistant.html" class="header__link" title="Asistente">Asistente</a></li>
+                <li><a href="register.html" class="header__link" title="Registrarse">Registrarse</a></li>
+                <li><a href="login.html" class="header__link" title="Iniciar sesión">Iniciar sesión</a></li>
+                <li><a href="market.html" class="header__link" title="Mercado de Apuestas">Mercado de Apuestas</a></li>
+                <li><a href="profile.html" class="header__link" title="Perfil de Usuario">Perfil de Usuario</a></li>
+                <li><a href="ranking.html" class="header__link" title="Ranking y Desafíos">Ranking y Desafíos</a></li>
             </ul>
         </nav>
     </header>
-<main class="main" role="main" itemprop="mainContentOfPage">
-    <h1 class="market__header">Mercado de Apuestas</h1>
-    <section class="market" aria-label="Listado de apuestas activas">
-        <div class="market__bets-container container" id="betsContainer">
-            
-        </div>
-        <section class="market__add-bet" aria-label="Agregar nueva apuesta">
-            <h2>Agregar Nueva Apuesta</h2>
-            <form id="addBetForm" class="add-bet__form" action="#" method="post" novalidate>
-                <label for="betSport" class="add-bet__label" aria-label="Deporte">Deporte *</label>
-                <input type="text" id="betSport" name="betSport" class="add-bet__input" required="true" />
-                
-                <label for="betMultiplier" class="add-bet__label" aria-label="Multiplicador">Multiplicador *</label>
-                <input type="number" id="betMultiplier" name="betMultiplier" class="add-bet__input" min="1" step="0.01" required="true" />
-                
-                <label for="betDate" class="add-bet__label" aria-label="Fecha">Fecha *</label>
-                <input type="date" id="betDate" name="betDate" class="add-bet__input" required="true"/>
-                
-                <label for="betStatus" class="add-bet__label" aria-label="¿Está abierta o cerrada?">Estado *</label>
-                <select id="betStatus" name="betStatus" class="add-bet__select" required="true">
-                    <option value="abierta">Abierta</option>
-                    <option value="cerrada">Cerrada</option>
-                </select>
-                
-                <label for="team1" class="add-bet__label" aria-label="Equipo 1">Equipo 1 *</label>
-                <input type="text" id="team1" name="team1" class="add-bet__input" required />
-                
-                <label for="team2" class="add-bet__label" aria-label="Equipo 2">Equipo 2 *</label>
-                <input type="text" id="team2" name="team2" class="add-bet__input" required />
-                
-                <button type="submit" class="add-bet__submit" aria-label="Botón agregar apuesta">Agregar Apuesta</button>
-            </form>
+    <main class="main" role="main" itemprop="mainContentOfPage">
+        <h1 class="market__header">Mercado de Apuestas</h1>
+        <section class="market" aria-label="Listado de apuestas activas">
+            <div class="market__bets-container container" id="betsContainer">
+
+            </div>
+            <section class="market__add-bet" aria-label="Agregar nueva apuesta">
+                <h2>Agregar Nueva Apuesta</h2>
+                <form id="addBetForm" class="add-bet__form" action="#" method="post" novalidate>
+                    <label for="betSport" class="add-bet__label" aria-label="Deporte">Deporte *</label>
+                    <input type="text" id="betSport" name="betSport" class="add-bet__input" required="true" />
+
+                    <label for="betMultiplier" class="add-bet__label" aria-label="Multiplicador">Multiplicador *</label>
+                    <input type="number" id="betMultiplier" name="betMultiplier" class="add-bet__input" min="1"
+                        step="0.01" required="true" />
+
+                    <label for="betDate" class="add-bet__label" aria-label="Fecha">Fecha *</label>
+                    <input type="date" id="betDate" name="betDate" class="add-bet__input" required="true" />
+
+                    <label for="betStatus" class="add-bet__label" aria-label="¿Está abierta o cerrada?">Estado *</label>
+                    <select id="betStatus" name="betStatus" class="add-bet__select" required="true">
+                        <option value="abierta">Abierta</option>
+                        <option value="cerrada">Cerrada</option>
+                    </select>
+
+                    <label for="team1" class="add-bet__label" aria-label="Equipo 1">Equipo 1 *</label>
+                    <input type="text" id="team1" name="team1" class="add-bet__input" required />
+
+                    <label for="team2" class="add-bet__label" aria-label="Equipo 2">Equipo 2 *</label>
+                    <input type="text" id="team2" name="team2" class="add-bet__input" required />
+
+                    <button type="submit" class="add-bet__submit" aria-label="Botón agregar apuesta">Agregar
+                        Apuesta</button>
+                </form>
+            </section>
         </section>
-    </section>
-</main>
-<footer class="footer" role="contentinfo">
-    <a href="/pages/about.html" class="footer__link" title="¿Quiénes somos?" aria-label="¿Quiénes somos?">¿Quiénes somos?</a>
-    <a href="/pages/FAQ.html" class="footer__link" title="Preguntas frecuentes" aria-label="Preguntas frecuentes">Preguntas frecuentes</a>
-    <a href="/pages/contact.html" class="footer__link" title="Contacta con nosotros" aria-label="Contacta con nosotros">Contacta con nosotros</a>
-    <a href="/pages/complaints.html" class="footer__link" title="Reclamaciones" aria-label="Reclamaciones">Reclamaciones</a>
-    <a href="/pages/privacy.html" class="footer__link" title="Política de privacidad" aria-label="Política de privacidad">Política de privacidad</a>
-    <a href="/pages/EULA.html" class="footer__link" title="Acuerdo de Usuario final" aria-label="Acuerdo de Usuario final">Acuerdo de Usuario final</a>
-    <br />
-    <p>&copy; | Carlos Mansilla Cruz | Mikel Sierra | 2025 - VS2DAW</p>
-</footer>
-<script src="../JS/Linkage.js"></script>
+    </main>
+    <footer class="footer" role="contentinfo">
+        <a href="about.html" class="footer__link" title="¿Quiénes somos?" aria-label="¿Quiénes somos?">¿Quiénes somos?</a>
+        <a href="FAQ.html" class="footer__link" title="Preguntas frecuentes" aria-label="Preguntas frecuentes">Preguntas frecuentes</a>
+        <a href="contact.html" class="footer__link" title="Contacta con nosotros" aria-label="Contacta con nosotros">Contacta con nosotros</a>
+        <a href="complaints.html" class="footer__link" title="Reclamaciones" aria-label="Reclamaciones">Reclamaciones</a>
+        <a href="privacy.html" class="footer__link" title="Política de privacidad" aria-label="Política de privacidad">Política de privacidad</a>
+        <a href="EULA.html" class="footer__link" title="Acuerdo de Usuario final" aria-label="Acuerdo de Usuario final">Acuerdo de Usuario final</a>
+        <br />
+        <p>&copy; | Carlos Mansilla Cruz | Mikel Sierra | 2025 - VS2DAW</p>
+    </footer>
+    <script src="../JS/Linkage.js"></script>
 </body>
+
 </html>

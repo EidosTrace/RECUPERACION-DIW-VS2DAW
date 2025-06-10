@@ -57,5 +57,6 @@
 @media (max-width: 768px) {
     .ranking__section {
         padding: 1rem;
+        width: 90%;
     }
 }

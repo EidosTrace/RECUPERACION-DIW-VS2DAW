@@ -90,3 +90,9 @@
 .registration__form a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 280px) {
+    #loginForm{
+        text-align: center;
+    }
+}

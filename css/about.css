@@ -26,3 +26,10 @@ p{
 .apartado{
     text-align: center;
 }
+
+@media (max-width: 450px) {
+    
+    .social-media img{
+        height: 50px;
+    }
+}

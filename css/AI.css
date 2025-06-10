@@ -124,7 +124,8 @@ textarea:focus {
     background-color: #3a3a3a;
     color: #ccc;
 }
-.Chat_Input_Text{
+
+.Chat_Input_Text {
     width: 100%;
     padding: 0.75rem;
     background-color: #272727;
@@ -141,6 +142,9 @@ textarea:focus {
     .container {
         grid-column: 1;
         padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .message {
@@ -151,4 +155,39 @@ textarea:focus {
         padding: 8px 15px;
         font-size: 0.9rem;
     }
+
+    .chats {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    textarea {
+        width: 94%;
+        min-height: 5%;
+        max-height: 20%;
+        resize: vertical;
+        padding: 10px;
+    }
+
+    .Chat_Input_Text{
+        color: white;
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 375px) {
+    
+    .chats{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    
+    
 }

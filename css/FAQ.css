@@ -8,3 +8,27 @@
 .container_FAQ h2{
     color: teal;
 }
+
+@media (max-width: 768px) {
+    
+    .container_FAQ h1{
+        font-size: 150%;
+    }
+
+    .container_FAQ h2{
+        font-size: 100%;
+    }
+
+}
+
+@media (max-width: 600px) {
+    
+    .container_FAQ h1{
+        font-size: 100%;
+    }
+
+    .container_FAQ h2{
+        font-size: 90%;
+    }
+
+}
